@@ -4,23 +4,23 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: bgd2
-  name: bgd2
+    app: bgd
+  name: bgd
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: bgd2
+      app: bgd
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: bgd2
+        app: bgd
     spec:
       containers:
       - image: quay.io/adhis/argocd:latest
-        name: bgd2
+        name: bgd
         env:
         - name: COLOR
           value: "blue"
